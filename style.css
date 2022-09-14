@@ -1,0 +1,171 @@
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+  /**
+   * colors
+   */
+
+  --dark-blue: #3d5a80;
+  --sky-blue: #98c1d9;
+  --light-blue: #e0fbfc;
+  --orange: #ee6c4d;
+  --darkish: #293241;
+
+  /**
+   * typography
+   */
+
+  --ff-fuzzy: "Fuzzy Bubbles", sans serif;
+}
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+img,
+svg,
+span,
+input,
+button,
+strong {
+  display: block;
+}
+
+img {
+  height: auto;
+}
+
+.drum {
+  cursor: pointer;
+}
+
+html {
+  font-family: var(--ff-fuzzy);
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--sky-blue);
+  color: var(--darkish);
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 14rem;
+}
+
+/*-----------------------------------*\
+  #TITLE
+\*-----------------------------------*/
+
+.logo {
+  text-align: center;
+  font-size: 12rem;
+  line-height: 1.7;
+  text-shadow: 5px 5px #558ABB;
+}
+
+/*-----------------------------------*\
+  #DRUMS
+\*-----------------------------------*/
+
+.drum-panel {
+  display: flex;
+  gap: .5rem;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+}
+
+.drum {
+  height: 10rem;
+  width: 10rem;
+  background-color: var(--light-blue);
+  position: relative;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  transition: all .1s ease-in;
+}
+
+.drum-key {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: rgb(239, 255, 253);
+  height: 3rem;
+  width: 3rem;
+  background-color: rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 2px black;
+}
+
+.drum1 {
+  background-image: url(./images/drum1.png);
+  background-size: cover;
+}
+
+.drum2 {
+  background-image: url(./images/drum2.png);
+  background-size: cover;
+}
+
+.drum3 {
+  background-image: url(./images/drum3.png);
+  background-size: cover;
+}
+
+.drum4 {
+  background-image: url(./images/drum4.png);
+  background-size: cover;
+}
+
+.drum5 {
+  background-image: url(./images/drum5.png);
+  background-size: cover;
+}
+
+.drum6 {
+  background-image: url(./images/drum6.png);
+  background-size: cover;
+}
+
+.drum7 {
+  background-image: url(./images/drum7.png);
+  background-size: cover;
+}
+
+.drum:hover {
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 8px, rgba(6, 24, 44, 0.65) 0px 16px 24px -4px, rgba(255, 255, 255, 0.08) 0px 4px 0px inset;
+}
+/*-----------------------------------*\
+  #PURPOSE TEXT
+\*-----------------------------------*/
+
+.purpose-text {
+  text-align: center;
+  margin-top: 9rem;
+  font-family: var(--ff-fuzzy);
+  font-size: 3rem;
+  color: var(--darkish);
+}
